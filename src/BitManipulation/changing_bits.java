@@ -1,5 +1,5 @@
 package BitManipulation;
-//find number of bots change to convert A into b
+//find number of bits change to convert A into b
 
 public class changing_bits {
     public static void main(String[] args) {
@@ -21,3 +21,8 @@ public class changing_bits {
         return countBits(a^b);
     }
 }
+//1. Calculate XOR of A and B.
+
+// 2. Count the set bits in the above
+//        calculated XOR result.
+//        countSetBits(a^b)
