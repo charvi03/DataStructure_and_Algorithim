@@ -1,7 +1,7 @@
 package BitManipulation;
 
 //find the only non repeating element in an array where
-// every element repeats itself twice
+// every element repeats itself twice (one odd occuring elements)
 public class xor_ques1 {
     public static void main(String[] args) {
         int[] arr = {5, 4, 1, 4, 3, 5, 1};
