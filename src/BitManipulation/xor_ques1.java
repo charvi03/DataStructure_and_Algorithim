@@ -7,22 +7,30 @@ public class xor_ques1 {
         int[] arr = {5, 4, 1, 4, 3, 5, 1};
         int n = arr.length;
         System.out.println("Non repeating element is :");
-        System.out.println(nonRepeating(arr, n));
+        System.out.println(nonR(arr, n));
 
     }
 
-    static int nonRepeating(int arr[], int n) {
-        for (int i = 0; i < n; i++) {
-            int j;
-            for (j = 0; j < n; j++) {
-                if (i != j && arr[i] == arr[j]) {
-                    break;
-                }
-            }
-            if (j == n)
-                return arr[i];
+//    static int nonRepeating(int arr[], int n) {
+//        for (int i = 0; i < n; i++) {
+//            int j;
+//            for (j = 0; j < n; j++) {
+//                if (i != j && arr[i] == arr[j]) {
+//                    break;
+//                }
+//            }
+//            if (j == n)
+//                return arr[i];
+//
+//        }
+//        return -1;
+//    }
 
+    static int nonR(int arr[], int n) {
+        int temp = 0;
+        for (int i = 0; i < n; i++) {
+            temp = (temp ^ arr[i]);
         }
-        return -1;
+        return  temp;
     }
 }
