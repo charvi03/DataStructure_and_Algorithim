@@ -9,5 +9,8 @@ public class set_ith_bit {
 
     static int setKBit(int n, int k) {
         return ((1 << k) | n);
+        //MASK -- << left  shift to find the set bit . (1)
+        //if number is non zero(after or)-- 1
+
     }
 }
