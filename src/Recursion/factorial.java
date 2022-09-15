@@ -12,7 +12,7 @@ public class factorial {
     static int fac(int n) {
         if (n == 0)
             return 1;
-        int partialans = fac(n - 1);
-        return n * partialans;
+        int partialAns = fac(n - 1);
+        return n * partialAns;
     }
 }
