@@ -16,5 +16,3 @@ public class factorial {
         return n * partialAns;
     }
 }
-/*
-* dsdvjabssabkbkjfbsdkbfksdbfjkb*/
