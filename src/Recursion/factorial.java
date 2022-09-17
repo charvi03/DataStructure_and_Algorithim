@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class factorial {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
+        System.out.println("ENTER THE NUMBER");
         int a= sc.nextInt();
         System.out.println(fac(a));
     }
