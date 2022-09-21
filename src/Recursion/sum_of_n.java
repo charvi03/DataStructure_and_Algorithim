@@ -6,8 +6,7 @@ public class sum_of_n {
     }
 
     static int sum(int n) {
-        if (n == 1)
-            return 1;
+        if (n == 1) return 1;
         int partialans = sum(n - 1);
         return n + partialans;
 
