@@ -17,7 +17,7 @@ class Queue {
     static void queueEnqueue(int data) {
         // check queue is full or not
         if (capacity == rear) {
-            System.out.printf("\nQueue is full\n");
+            System.out.println("Queue is full");
             return;
         }
 
@@ -34,7 +34,7 @@ class Queue {
     static void queueDequeue() {
         // if queue is empty
         if (front == rear) {
-            System.out.printf("\nQueue is empty\n");
+            System.out.println("Queue is empty");
             return;
         }
 
@@ -59,13 +59,13 @@ class Queue {
     static void queueDisplay() {
         int i;
         if (front == rear) {
-            System.out.printf("\nQueue is Empty\n");
+            System.out.println("Queue is Empty");
             return;
         }
 
         // traverse front to rear and print elements
         for (i = front; i < rear; i++) {
-            System.out.printf(" %d <-- ", queue[i]);
+            System.out.println(queue[i]);
         }
         return;
     }
@@ -73,10 +73,10 @@ class Queue {
     // print front of queue
     static void queueFront() {
         if (front == rear) {
-            System.out.printf("\nQueue is Empty\n");
+            System.out.println("Queue is Empty");
             return;
         }
-        System.out.printf("\nFront Element is: %d", queue[front]);
+        System.out.println("Front Element is:"+ queue[front]);
         return;
     }
 }
