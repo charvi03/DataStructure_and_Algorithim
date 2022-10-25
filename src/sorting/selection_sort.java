@@ -4,7 +4,7 @@ import static sorting.selection.selectionSort;
 
 public class selection_sort {
     public static void main(String[] args) {
-        int a[] = {2, 1, 4, 3};
+        int a[] = {10,5,8,20,2,18};
         selectionSort(a, 4);
 
         for(int i = 0; i < 4; i++){
