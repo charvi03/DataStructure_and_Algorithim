@@ -4,10 +4,10 @@ import static sorting.bubble.bubbleSort;
 
 public class bubble_sort {
     public static void main(String[] args) {
-        int a[] = {2, 1, 4, 3};
-        bubbleSort(a, 4);
+        int a[] = {4, 3, 7, 1,5};
+        bubbleSort(a, 5);
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 5; i++) {
             System.out.print(a[i] + " ");
         }
 
@@ -19,7 +19,7 @@ class bubble {
     static void bubbleSort(int arr[], int n) {
         boolean swapped;
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n-1; i++) {
 
             swapped = false;
 
