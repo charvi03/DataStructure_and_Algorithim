@@ -26,10 +26,12 @@ class selection {
                     min_ind = j;
                 }
             }
+            if(min_ind!=i){
 
             int temp = arr[i];
             arr[i] = arr[min_ind];
             arr[min_ind] = temp;
+            }
         }
     }
 }
