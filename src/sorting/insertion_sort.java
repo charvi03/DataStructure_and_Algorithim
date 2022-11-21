@@ -2,7 +2,7 @@ package sorting;
 
 public class insertion_sort {
     public static void main(String[] args) {
-        int arr[] = new int[]{50,20,40,60,10,30};
+        int[] arr = new int[]{50,20,40,60,10,30};
 
         int n = arr.length;
         iSort(arr,n);
@@ -10,7 +10,7 @@ public class insertion_sort {
         for(int x:arr)
             System.out.print(x+" ");
     }
-    static void iSort(int arr[],int n){
+    static void iSort(int[] arr, int n){
 
         for(int i=1;i<n;i++){
             int key = arr[i];

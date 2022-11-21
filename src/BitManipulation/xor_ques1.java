@@ -26,7 +26,7 @@ public class xor_ques1 {
 //        return -1;
 //    }
 
-    static int nonR(int arr[], int n) {
+    static int nonR(int[] arr, int n) {
         int temp = 0;
         for (int i = 0; i < n; i++) {
             temp = (temp ^ arr[i]);

@@ -4,7 +4,7 @@ import static sorting.merging_sort.mergeSort;
 
 public class quick_sort {
     public static void main(String[] args) {
-        int a[] = {8,4,7,9,3,10,5};
+        int[] a = {8,4,7,9,3,10,5};
 //		quickSort(a, 0, a.length-1);
 
         mergeSort(a, 0, a.length-1);
@@ -13,12 +13,12 @@ public class quick_sort {
 
 
         }
-    static void swap(int a[], int i, int j) {
+    static void swap(int[] a, int i, int j) {
         int temp = a[i];
         a[i] = a[j];
         a[j] = temp;
     }
-    static int partition(int a[], int l, int h) {
+    static int partition(int[] a, int l, int h) {
         int i = l;
         int j = h;
 
@@ -34,7 +34,7 @@ public class quick_sort {
         return j;
     }
 
-    static void quickSort(int a[], int l, int h) {
+    static void quickSort(int[] a, int l, int h) {
         if(l < h) {
             int pivot = partition(a, l, h);
             quickSort(a, l, pivot-1);

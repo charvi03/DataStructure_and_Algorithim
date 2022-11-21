@@ -29,7 +29,7 @@ public class basic_program {
 }
 class Queue {
     int SIZE = 5;
-    int items[] = new int[SIZE];
+    int[] items = new int[SIZE];
     int front, rear;
 
     Queue() {
@@ -39,18 +39,12 @@ class Queue {
 
     // check if the queue is full
     boolean isFull() {
-        if (front == 0 && rear == SIZE - 1) {
-            return true;
-        }
-        return false;
+        return front == 0 && rear == SIZE - 1;
     }
 
     // check if the queue is empty
     boolean isEmpty() {
-        if (front == -1)
-            return true;
-        else
-            return false;
+        return front == -1;
     }
 
     // insert elements to the queue

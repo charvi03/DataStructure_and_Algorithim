@@ -2,7 +2,9 @@ package Arrays;
 
 public class insertion {
     public static void main(String[] args) {
-        int arr[] = new int[5], cap = 5, n = 3;
+        int[] arr = new int[5];
+        int cap = 5;
+        int n = 3;
 
         arr[0] = 5; arr[1] = 10; arr[2] = 20;
 
@@ -27,7 +29,7 @@ public class insertion {
         }
     }
 
-    static int insert(int arr[], int n, int x, int cap, int pos)
+    static int insert(int[] arr, int n, int x, int cap, int pos)
     {
         if(n == cap)
             return n;

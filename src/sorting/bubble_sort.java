@@ -4,7 +4,7 @@ import static sorting.bubble.bubbleSort;
 
 public class bubble_sort {
     public static void main(String[] args) {
-        int a[] = {4, 3, 7, 1,5};
+        int[] a = {4, 3, 7, 1,5};
         bubbleSort(a, 5);
 
         for (int i = 0; i < 5; i++) {
@@ -16,7 +16,7 @@ public class bubble_sort {
 
 class bubble {
 
-    static void bubbleSort(int arr[], int n) {
+    static void bubbleSort(int[] arr, int n) {
         boolean swapped;
 
         for (int i = 0; i < n-1; i++) {
@@ -35,7 +35,7 @@ class bubble {
 
                 }
             }
-            if (swapped == false)
+            if (!swapped)
                 break;
         }
     }

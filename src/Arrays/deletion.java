@@ -2,8 +2,9 @@ package Arrays;
 
 public class deletion {
     public static void main(String[] args) {
-        int arr[] = {3, 8, 12, 5, 6}, x = 12, n = 5;
-
+        int[] arr = {3, 8, 12, 5, 6};
+        int x = 12;
+        int n = 5;
 
 
         System.out.println("Before Deletion");
@@ -26,7 +27,7 @@ public class deletion {
         }
 
     }
-    static int deleteEle(int arr[], int n, int x)
+    static int deleteEle(int[] arr, int n, int x)
     {
         int i = 0;
 

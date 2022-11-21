@@ -9,7 +9,7 @@ public class xor_ques2 {
         twoNonRepeat(arr, n);
     }
 
-    static void twoNonRepeat(int arr[], int n) {
+    static void twoNonRepeat(int[] arr, int n) {
         //find xor of all numbers...
        // we get result as a^b.(two odd appearance)
         int xor = 0, temp1 = 0,temp2 = 0;

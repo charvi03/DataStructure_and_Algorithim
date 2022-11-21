@@ -4,7 +4,7 @@ import static sorting.selection.selectionSort;
 
 public class selection_sort {
     public static void main(String[] args) {
-        int a[] = {10, 5, 8, 20, 2, 18};
+        int[] a = {10, 5, 8, 20, 2, 18};
         selectionSort(a, 6);
 
         for (int i = 0; i < 6; i++) {
@@ -17,7 +17,7 @@ public class selection_sort {
 class selection {
 
 
-    static void selectionSort(int arr[], int n) {
+    static void selectionSort(int[] arr, int n) {
         for (int i = 0; i < n - 1; i++) {
             int min_ind = i;
 

@@ -8,7 +8,7 @@ public class eratosthenes {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number till u want primes");
         int a = sc.nextInt();
-        boolean isPrime[] = sieve(a);
+        boolean[] isPrime = sieve(a);
         for (int i = 0; i <= a; i++) {
             System.out.println(i + " " + isPrime[i]);
         }
@@ -16,7 +16,7 @@ public class eratosthenes {
     }
 
     static boolean[] sieve(int n) {
-        boolean isPrime[] = new boolean[n + 1];
+        boolean[] isPrime = new boolean[n + 1];
         Arrays.fill(isPrime, true);
         isPrime[0] = false;
         isPrime[1] = false;

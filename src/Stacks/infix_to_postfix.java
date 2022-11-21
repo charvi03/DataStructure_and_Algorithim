@@ -41,7 +41,7 @@ class Testing
     static String infixToPostfix(String exp)
     {
         // initializing empty String for result
-        String result = new String("");
+        String result = "";
 
         // initializing empty stack
         Stack<Character> stack = new Stack<>();

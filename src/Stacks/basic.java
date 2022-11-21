@@ -13,7 +13,7 @@ public class basic {
 
     }
     static class MyStack{
-        int arr[];
+        int[] arr;
         int cap;
         int top;
         MyStack(int c){

@@ -2,7 +2,7 @@ package Arrays;
 
 public class check_sorted {
     public static void main(String[] args) {
-        int arr[]={5,20,70,80,100};
+        int[] arr ={5,20,70,80,100};
         System.out.println(isSorted(arr));
     }
     static boolean isSorted(int[]arr){

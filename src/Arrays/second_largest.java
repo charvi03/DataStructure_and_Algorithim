@@ -2,13 +2,13 @@ package Arrays;
 
 public class second_largest {
     public static void main(String[] args) {
-        int arr[]={5,20,20,12,10};
+        int[] arr ={5,20,20,12,10};
         System.out.println("the element at index "+secondLargest(arr,5)
         + " is second largest");
 
     }
 
-    static int secondLargest(int a[], int n){
+    static int secondLargest(int[] a, int n){
         int largest=0;
         int res=-1;
 
