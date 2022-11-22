@@ -14,7 +14,7 @@ public class merging_sort {
 
         int n1=m-l+1, n2=h-m;
         int[] left=new int[n1];int[]right=new int[n2];
-        System.arraycopy(arr, 0 + l, left, 0, n1);
+        System.arraycopy(arr, l, left, 0, n1);
         for(int j=0;j<n2;j++)
             right[j]=arr[m+1+j];
         int i=0,j=0,k=l;

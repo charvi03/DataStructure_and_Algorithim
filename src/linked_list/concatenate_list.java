@@ -2,74 +2,42 @@ package linked_list;
 
 public class concatenate_list {
     public static void main(String[] args) {
-        NodeFirst<Integer> n1 = new NodeFirst<>(10);
-        NodeFirst<Integer> n2 = new NodeFirst<>(20);
-        NodeFirst<Integer> n3 = new NodeFirst<>(30);
+        concattttt.Node head1 = new concattttt.Node(10);
+        head1.next = new concattttt.Node(20);
+        head1.next.next = new concattttt.Node(30);
+        head1.next.next.next = new concattttt.Node(40);
 
-        NodeFirst<Integer> head = n1;
-        n1.next = n2;
-        n2.next = n3;
-
-        NodeSecond<Integer> n5 = new NodeSecond<>(40);
-        NodeSecond<Integer> n6 = new NodeSecond<>(50);
-        NodeSecond<Integer> n7 = new NodeSecond<>(60);
-
-        NodeSecond<Integer> headS = n5;
-        n5.next = n6;
-        n6.next = n7;
-        System.out.println("before concat");
-        printLL(head);
-        printLs(headS);
-        System.out.println("after concat");
-
-
+        concattttt.Node head2 = new concattttt.Node(5);
+        head2.next = new concattttt.Node(10);
+        head2.next.next = new concattttt.Node(15);
+        head2.next.next.next = new concattttt.Node(20);
+        /*printLL(head1);
+        printLL(head2);
+        printLL(mergeTwoSortedLL(head1, head2));*/
+        printLL(concatt(head1, head2));
     }
+    static class Node {
+        int data;
+        concattttt.Node next;
 
-    static void printLL(NodeFirst<Integer> head) {
-        NodeFirst cur = head;
-        while (cur != null) {
-            System.out.print(cur.data + " -> ");
-            cur = cur.next;
+        public Node(int data) {
+            this.data = data;
         }
-        System.out.println("end");
     }
-
-    static void printLs(NodeSecond<Integer> head) {
-        NodeSecond cur = head;
-        while (cur != null) {
-            System.out.print(cur.data + " -> ");
-            cur = cur.next;
+    static void printLL(concattttt.Node head) {
+        concattttt.Node curr = head;
+        while (curr != null) {
+            System.out.print(curr.data + " ");
+            curr = curr.next;
         }
-        System.out.println("end");
+        System.out.println();
     }
-
-    /*static void concat(NodeFirst<Integer> head1, NodeSecond<Integer> head2) {
-        NodeFirst<Integer> cur = head1;
-      //  NodeSecond<Integer> cur1 = head2;
+    static concattttt.Node concatt(concattttt.Node head1, concattttt.Node head2) {
+        concattttt.Node cur = head1;
         while (cur.next != null) {
             cur = cur.next;
         }
-       cur.next=head2;
-        head2==null;
-        System.out.println(cur);
-
-    }*/
-}
-
-class NodeFirst<T> {
-    T data;
-    NodeFirst<Integer> next;
-
-    public NodeFirst(T data) {
-        this.data = data;
-    }
-}
-
-class NodeSecond<T> {
-    T data;
-    NodeSecond<Integer> next;
-
-    public NodeSecond(T data) {
-        this.data = data;
+        cur.next = head2;
+        return head1;
     }
 }
