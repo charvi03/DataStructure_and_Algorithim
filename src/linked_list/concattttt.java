@@ -11,10 +11,14 @@ public class concattttt {
         head2.next = new Node(10);
         head2.next.next = new Node(15);
         head2.next.next.next = new Node(20);
-        /*printLL(head1);
+        System.out.println("Before the merge");
+        System.out.println("Linked list 1");
+        printLL(head1);
+        System.out.println("Linked list 2");
         printLL(head2);
-        printLL(mergeTwoSortedLL(head1, head2));*/
-        printLL(concatt(head1, head2));
+        System.out.println("After the merge");
+        printLL(mergeTwoSortedLL(head1, head2));
+
 
     }
 
@@ -36,14 +40,6 @@ public class concattttt {
         System.out.println();
     }
 
-    static Node concatt(Node head1, Node head2) {
-        Node cur = head1;
-        while (cur.next != null) {
-            cur = cur.next;
-        }
-        cur.next = head2;
-        return head1;
-    }
 
     static Node mergeTwoSortedLL(Node head1, Node head2) {
         Node head = null, tail = null;

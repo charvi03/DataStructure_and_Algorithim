@@ -40,3 +40,4 @@ class bubble {
         }
     }
 }
+// time complexity -- n *(n-1)/2
