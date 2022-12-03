@@ -19,7 +19,7 @@ public class circular_insertionBegin {
         }while(r!=head);
     }
 
-    static Node insertBegin(Node head,int x){
+    static Node insertBegin(Node head, int x){
         Node temp=new Node(x);
         if(head==null){
             temp.next=temp;

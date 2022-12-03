@@ -19,7 +19,7 @@ public class delete_circular_kth {
         }while(r!=head);
     }
 
-    static Node deleteKth(Node head,int k){
+    static Node deleteKth(Node head, int k){
         if(head==null)return head;
         if(k==1)return deleteHead(head);
         Node curr=head;
