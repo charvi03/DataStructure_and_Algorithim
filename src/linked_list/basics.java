@@ -72,7 +72,7 @@ public class basics {
         return head;
     }
 }
-class Node<T> {
+  class Node<T> {
     T data;
     Node<T> next;
 
