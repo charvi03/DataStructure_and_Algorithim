@@ -6,12 +6,16 @@ public class basic {
         s.push(5);
         s.push(10);
         s.push(20);
+        s.print();
+        System.out.println();
         System.out.println(s.pop());
         System.out.println(s.size());
         System.out.println(s.peek());
         System.out.println(s.isEmpty());
 
+
     }
+
     static class MyStack{
         int[] arr;
         int cap;
@@ -27,6 +31,11 @@ public class basic {
             if(top==cap-1){System.out.println("Stack is full");return;}
             top++;
             arr[top]=x;
+        }
+        void print(){
+            for(int i = top;i>-1;i--){
+                System.out.print(arr[i]+ " ");
+            }
         }
 
         int pop(){
@@ -48,5 +57,8 @@ public class basic {
         boolean isEmpty(){
             return top==-1;
         }
+
     }
+
+
 }

@@ -11,9 +11,6 @@ public class concatenate_list {
         head2.next = new concattttt.Node(10);
         head2.next.next = new concattttt.Node(15);
         head2.next.next.next = new concattttt.Node(20);
-        /*printLL(head1);
-        printLL(head2);
-        printLL(mergeTwoSortedLL(head1, head2));*/
         printLL(concatt(head1, head2));
     }
     static class Node {
