@@ -21,7 +21,7 @@ public class basic_program {
         q.display();
 
         // deQueue removes element entered first i.e. 1
-        q.deQueue();
+       q.deQueue();
 
         // Now we have just 4 elements
         q.display();

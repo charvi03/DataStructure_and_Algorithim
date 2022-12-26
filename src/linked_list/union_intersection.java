@@ -33,6 +33,7 @@ public class union_intersection {
 
         System.out.println("Union List is");
         unin.printList();
+
     }
 
 }
@@ -124,5 +125,6 @@ class LinkedList {
         }
         return false;
     }
+
 }
 

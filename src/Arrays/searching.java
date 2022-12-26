@@ -5,7 +5,7 @@ public class searching {
         int[] arr = {20, 5, 7, 25};
         int x = 5;
 
-        System.out.println(search(arr, arr.length, x));
+        System.out.println("Element is at "+search(arr, arr.length, x)+" index");
 
     }
     static int search(int[] arr, int n, int x)
