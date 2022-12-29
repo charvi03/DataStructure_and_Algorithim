@@ -10,6 +10,7 @@ public class bst_create {
         int x = 20;
 
         root = insert(root, x);
+        System.out.println("Binary search tree is ");
         inorder(root);
     }
 

@@ -5,6 +5,7 @@ import static sorting.selection.selectionSort;
 public class selection_sort {
     public static void main(String[] args) {
         int[] a = {10, 5, 8, 20, 2, 18};
+        System.out.println("Sorted array is ");
         selectionSort(a, 6);
 
         for (int i = 0; i < 6; i++) {

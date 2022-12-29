@@ -4,7 +4,7 @@ public class merging_sort {
     public static void main(String[] args) {
         int[] a = new int[]{10, 5, 30, 15, 7};
         int l = 0, r = 4;
-
+        System.out.println("Sorted array is ");
         mergeSort(a, l, r);
         for (int x : a)
             System.out.print(x + " ");

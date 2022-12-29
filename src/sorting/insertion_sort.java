@@ -5,6 +5,7 @@ public class insertion_sort {
         int[] arr = new int[]{50,20,40,60,10,30};
 
         int n = arr.length;
+        System.out.println("Sorted array is ");
         iSort(arr,n);
 
         for(int x:arr)

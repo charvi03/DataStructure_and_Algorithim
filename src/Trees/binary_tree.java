@@ -6,12 +6,15 @@ public class binary_tree {
         root.left = new Node(20);
         root.right = new Node(30);
         root.right.left = new Node(40);
-        root.right.right = new Node(50);
+       // root.right.right = new Node(50);
+        System.out.println("Tree values are: ");
         inorder(root);
-        System.out.println();
-        preorder(root);
-        System.out.println();
-        postorder(root);
+//        System.out.println();
+//        System.out.println("Preorder traversal is");
+//        preorder(root);
+//        System.out.println();
+//        System.out.println("Postorder traversal is");
+//        postorder(root);
     }
 
     public static void inorder(Node root) {

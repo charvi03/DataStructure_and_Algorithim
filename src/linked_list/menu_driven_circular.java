@@ -46,7 +46,9 @@ public class menu_driven_circular {
                 printlist(head);
                 break;
             case 6:
-                find(5,head);
+                System.out.println("enter the value to add");
+                int e = scanner.nextInt();
+                find(e,head);
                 break;
             case 7:
                 System.out.println("There are "+countNodes(head)+" nodes");

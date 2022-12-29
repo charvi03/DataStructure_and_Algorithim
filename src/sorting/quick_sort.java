@@ -5,9 +5,8 @@ import static sorting.merging_sort.mergeSort;
 public class quick_sort {
     public static void main(String[] args) {
         int[] a = {8, 4, 7, 9, 3, 10, 5};
-//		quickSort(a, 0, a.length-1);
-
-        mergeSort(a, 0, a.length - 1);
+        System.out.println("Sorted array is");
+     	quickSort(a, 0, a.length-1);
 
         for (int e : a) System.out.print(e + " ");
 

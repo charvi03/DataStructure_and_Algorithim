@@ -8,6 +8,10 @@ public class dlt_node {
         root.right = new Node(15);
         root.right.left = new Node(12);
         root.right.right = new Node(18);
+        System.out.println("before node deletion");
+        inorder(root);
+        System.out.println();
+        System.out.println("after node deletion");
         int x = 15;
 
         root = delNode(root, x);

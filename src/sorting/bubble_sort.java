@@ -5,6 +5,7 @@ import static sorting.bubble.bubbleSort;
 public class bubble_sort {
     public static void main(String[] args) {
         int[] a = {4, 3, 7, 1,5};
+        System.out.println("Sorted array is ");
         bubbleSort(a, 5);
 
         for (int i = 0; i < 5; i++) {

@@ -19,6 +19,10 @@ public class menuDriven_singly {
         llist2.push(2);
         llist2.push(4);
         llist2.push(8);
+        System.out.println("list 1 is ");
+        printLL(llist1.head);
+        System.out.println("list 2 is ");
+        printLL(llist1.head);
         Scanner scanner = new Scanner(System.in);
         System.out.println("Press 1 for display");
         System.out.println("Press 2 for concatenate");
@@ -39,10 +43,12 @@ public class menuDriven_singly {
                 break;
             case 4:
                 m.getUnion(llist1.head,llist2.head);
+                System.out.println("Union is");
                 m.printList();
                 break;
             case 5:
                 m1.getIntersection(llist1.head,llist2.head);
+                System.out.println("intersection is");
                 m1.printList();
                 break;
 
