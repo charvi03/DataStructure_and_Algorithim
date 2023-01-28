@@ -61,16 +61,31 @@ public class adjacency_list {
         }
     }
 
+    public static void dfs(ArrayList<edge> graph[], int curr, boolean vis[]) {
+        System.out.println(curr + " ");
+        vis[curr] = true;
+        for (int i = 0; i < graph[curr].size(); i++) {
+            edge e = graph[curr].get(i);
+            if (vis[e.dest] == false) {
+                dfs(graph, e.dest, vis);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         int v = 7;
         ArrayList<edge> graph[] = new ArrayList[v];
         createGraph(graph);
+        boolean vis[] = new boolean[v];
 //print 2 neighbours
 //        for (int i = 0; i < graph[2].size(); i++) {
 //            edge e = graph[2].get(i);
 //            System.out.println(e.dest + " ");
-        bfs(graph, v);
+//            bfs(graph, v);
+//            System.out.println();
+        dfs(graph, 0, vis);
         System.out.println();
     }
 }
+
 
